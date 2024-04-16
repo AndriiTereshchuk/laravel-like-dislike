@@ -1,19 +1,20 @@
 {
-    "name": "eslamfaroug/laravel-like-dislike",
+    "name": "atereshchuk/laravel-like-dislike",
     "description": "👍 User like/dislike features for Laravel Application.",
     "license": "MIT",
     "authors": [
         {
-            "name": "eslamfaroug",
-            "email": "eslamfaroug3@gmail.com"
+            "name": "atereshchuk",
+            "email": "andrii@tereshch.uk"
         }
     ],
     "require": {
-        "laravel/framework": "^9.0|^10.0"
+        "php": "^7.2|^8.0|^8.1|^8.2|^8.3",
+        "laravel/framework": "^9.0|^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
-            "EslamFaroug\\LaravelLikeDislike\\": "src"
+            "ATereshchuk\\LaravelLikeDislike\\": "src"
         }
     },
     "autoload-dev": {
@@ -32,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "EslamFaroug\\LaravelLikeDislike\\LikeServiceProvider"
+                "ATereshchuk\\LaravelLikeDislike\\LikeServiceProvider"
             ]
         },
         "hooks": {
