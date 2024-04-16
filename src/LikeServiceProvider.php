@@ -1,6 +1,6 @@
 <?php
 
-namespace EslamFaroug\LaravelLikeDislike;
+namespace ATereshchuk\LaravelLikeDislike;
 
 use Illuminate\Support\ServiceProvider;
 
