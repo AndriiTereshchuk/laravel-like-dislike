@@ -1,12 +1,12 @@
 <?php
 
-namespace EslamFaroug\LaravelLikeDislike;
+namespace ATereshchuk\LaravelLikeDislike;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use EslamFaroug\LaravelLikeDislike\Events\Liked;
-use EslamFaroug\LaravelLikeDislike\Events\Unliked;
+use ATereshchuk\LaravelLikeDislike\Events\Liked;
+use ATereshchuk\LaravelLikeDislike\Events\Unliked;
 
 class
 Like extends Model
