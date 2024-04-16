@@ -19,7 +19,7 @@ return [
     /*
      * Model name for like record.
      */
-    'like_model' => \EslamFaroug\LaravelLikeDislike\Like::class,
+    'like_model' => \ATereshchuk\LaravelLikeDislike\Like::class,
 
     /*
      * Model name for liker.
