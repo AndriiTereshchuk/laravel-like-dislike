@@ -1,8 +1,8 @@
 <?php
 
-namespace EslamFaroug\LaravelLikeDislike\Traits;
+namespace ATereshchuk\LaravelLikeDislike\Traits;
 
-use EslamFaroug\LaravelLikeDislike\Like;
+use ATereshchuk\LaravelLikeDislike\Like;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -42,7 +42,7 @@ trait Liker
      */
     public function unlike(Model $object): bool
     {
-        /* @var \EslamFaroug\LaravelLikeDislike\Like $relation */
+        /* @var \ATereshchuk\LaravelLikeDislike\Like $relation */
         $relation = \app(config('like.like_model'))
             ->where('likeable_id', $object->getKey())
             ->where('likeable_type', $object->getMorphClass())
@@ -80,7 +80,7 @@ trait Liker
             $check->delete();
         }
 
-        /* @var \EslamFaroug\LaravelLikeDislike\Traits\Likeable|\Illuminate\Database\Eloquent\Model $object */
+        /* @var \ATereshchuk\LaravelLikeDislike\Traits\Likeable|\Illuminate\Database\Eloquent\Model $object */
         return $like->where($attributes)->firstOr(
             function () use ($like, $attributes) {
                 return $like->unguarded(function () use ($like, $attributes) {
@@ -110,7 +110,7 @@ trait Liker
 
     public function undislike(Model $object): bool
     {
-        /* @var \EslamFaroug\LaravelLikeDislike\Like $relation */
+        /* @var \ATereshchuk\LaravelLikeDislike\Like $relation */
         $relation = \app(config('like.like_model'))
             ->where('likeable_id', $object->getKey())
             ->where('likeable_type', $object->getMorphClass())
@@ -148,7 +148,7 @@ trait Liker
             $check->delete();
         }
 
-        /* @var \EslamFaroug\LaravelLikeDislike\Traits\Likeable|\Illuminate\Database\Eloquent\Model $object */
+        /* @var \ATereshchuk\LaravelLikeDislike\Traits\Likeable|\Illuminate\Database\Eloquent\Model $object */
         return $like->where($attributes)->firstOr(
             function () use ($like, $attributes) {
                 return $like->unguarded(function () use ($like, $attributes) {
