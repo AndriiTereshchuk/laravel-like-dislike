@@ -5,7 +5,7 @@
 ## Installing
 
 ```shell
-composer require eslamfaroug/laravel-like-dislike
+composer require atereshchuk/laravel-like-dislike
 ```
 
 ### Configuration
@@ -28,14 +28,14 @@ php artisan vendor:publish
 
 ### Traits
 
-#### `EslamFaroug\LaravelLikeDislike\Traits\Liker`
+#### `ATereshchuk\LaravelLikeDislike\Traits\Liker`
 
 ```php
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use EslamFaroug\LaravelLikeDislike\Traits\Liker;
+use ATereshchuk\LaravelLikeDislike\Traits\Liker;
 
 class User extends Authenticatable
 {
@@ -45,11 +45,11 @@ class User extends Authenticatable
 }
 ```
 
-#### `EslamFaroug\LaravelLikeDislike\Traits\Likeable`
+#### `ATereshchuk\LaravelLikeDislike\Traits\Likeable`
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use EslamFaroug\LaravelLikeDislike\Traits\Likeable;
+use ATereshchuk\LaravelLikeDislike\Traits\Likeable;
 
 class Post extends Model
 {
