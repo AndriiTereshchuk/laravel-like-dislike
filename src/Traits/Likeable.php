@@ -1,8 +1,8 @@
 <?php
 
-namespace EslamFaroug\LaravelLikeDislike\Traits;
+namespace ATereshchuk\LaravelLikeDislike\Traits;
 
-use EslamFaroug\LaravelLikeDislike\Like;
+use ATereshchuk\LaravelLikeDislike\Like;
 use Illuminate\Database\Eloquent\Model;
 
 trait Likeable
