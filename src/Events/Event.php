@@ -1,6 +1,6 @@
 <?php
 
-namespace EslamFaroug\LaravelLikeDislike\Events;
+namespace ATereshchuk\LaravelLikeDislike\Events;
 
 use Illuminate\Database\Eloquent\Model;
 
